@@ -1,0 +1,12 @@
+{
+  "xso.title": "Xander's Sodium Options",
+  "xso.cfg.enabled": "XSO",
+  "xso.cfg.enabled.tooltip": "Mengkonfigurasikan sama ada XSO harus menggantikan GUI tetapan Sodium. Apabila dinyahdayakan, anda boleh mengkonfigurasi mod ini melalui Mod Menu.",
+  "xso.cfg.lenient_opts": "Tetapan Lembut",
+  "xso.cfg.lenient_opts.tooltip": "Jika XSO gagal menukarkan sesuatu tetapan, daripada gagal mencipta keseluruhan GUI, ia akan menambah tetapan pemegang tempat sebagai pengganti tetapan yang rosak supaya anda boleh terus menggunakan XSO dengan mod yang tidak serasi.",
+  "xso.cfg.hard_crash": "Ranap Keras",
+  "xso.cfg.hard_crash.tooltip": "Jika XSO tidak dapat menukarkan GUI Sodium atas apa jua sebab, mendayakan tetapan ini akan membuatkan Minecraft ranap sepenuhnya, dan bukannya memaparkan amaran dan memberi anda GUI Sodium yang asal. Ini boleh memberi manfaat kerana ia akan membuat Minecraft menjana laporan ranap manakala ia hanya mencetak ke latest.log dengan tetapan ini ditutup.",
+
+  "xso.incompatible.button": "Tetapan Tidak Serasi",
+  "xso.incompatible.tooltip": "Tetapan ini pada masa ini tidak serasi dengan XSO. Sila buat laporan isu untuk mendapatkan sokongan!"
+}
