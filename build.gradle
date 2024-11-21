@@ -90,6 +90,13 @@ jar {
     }
 }
 
+tasks.register('buildAndCollect', Copy) {
+    group = "build"
+    from(tasks.remapJar.archiveFile)
+    into(rootProject.layout.buildDirectory.file("libs"))
+    dependsOn("build")
+}
+
 if (stonecutter.current.active) { // run configs for non-active version would be invalid
     loom {
         runConfigs.all {
