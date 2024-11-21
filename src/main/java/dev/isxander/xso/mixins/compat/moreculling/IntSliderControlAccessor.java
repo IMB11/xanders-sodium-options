@@ -1,12 +1,11 @@
 package dev.isxander.xso.mixins.compat.moreculling;
 
-import ca.fxco.moreculling.config.sodium.IntSliderControl;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Pseudo
-@Mixin(IntSliderControl.class)
+@Mixin(targets = "ca.fxco.moreculling.config.sodium.IntSliderControl")
 public interface IntSliderControlAccessor {
     @Accessor
     int getMin();

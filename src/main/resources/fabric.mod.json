@@ -31,7 +31,7 @@
     "fabricloader": ">=${target_fabricloader}",
     "minecraft": "${target_minecraft}",
     "sodium": "${target_sodium}",
-    "yet_another_config_lib_v3": "~3.5.0"
+    "yet_another_config_lib_v3": ">=3.5.0"
   },
   "breaks": {
     "reeses-sodium-options": "*"

@@ -1,7 +1,5 @@
 package dev.isxander.xso.compat;
 
-import ca.fxco.moreculling.config.sodium.FloatSliderControl;
-import ca.fxco.moreculling.config.sodium.IntSliderControl;
 import ca.fxco.moreculling.config.sodium.MoreCullingSodiumOptionImpl;
 import ca.fxco.moreculling.utils.CacheUtils;
 import dev.isxander.xso.SodiumBinding;
@@ -41,17 +39,21 @@ public class MoreCullingCompat {
 
     @SuppressWarnings({"rawtypes", "unchecked"})
     public static <T> boolean convertControl(dev.isxander.yacl3.api.Option.Builder<T> yaclOption, Option<T> sodiumOption) {
-        if (sodiumOption.getControl() instanceof IntSliderControl sliderControl) {
+        //? if <1.21.2 {
+        /*if (sodiumOption.getControl() instanceof ca.fxco.moreculling.config.sodium.IntSliderControl sliderControl) {
             IntSliderControlAccessor accessor = (IntSliderControlAccessor) sliderControl;
             yaclOption.controller(opt -> (dev.isxander.yacl3.api.controller.ControllerBuilder<T>) IntegerSliderControllerBuilder.create((dev.isxander.yacl3.api.Option<Integer>) opt).range(accessor.getMin(), accessor.getMax()).step(accessor.getInterval()));
             return true;
         }
 
-        if (sodiumOption.getControl() instanceof FloatSliderControl sliderControl) {
+        if (sodiumOption.getControl() instanceof ca.fxco.moreculling.config.sodium.FloatSliderControl sliderControl) {
             FloatSliderControlAccessor accessor = (FloatSliderControlAccessor) sliderControl;
             yaclOption.controller(opt -> (dev.isxander.yacl3.api.controller.ControllerBuilder<T>) FloatSliderControllerBuilder.create((dev.isxander.yacl3.api.Option<Float>) opt).range(accessor.getMin(), accessor.getMax()).step(accessor.getInterval()));
             return true;
         }
+        *///?}
+
+        // Don't need to do anything with moreculling after 1.21.2
 
         return false;
     }
