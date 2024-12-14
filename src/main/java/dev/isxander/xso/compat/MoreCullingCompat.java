@@ -35,13 +35,13 @@ public class MoreCullingCompat {
         //? if <1.21.2 {
         /*if (sodiumOption.getControl() instanceof ca.fxco.moreculling.config.sodium.IntSliderControl sliderControl) {
             dev.isxander.xso.mixins.compat.moreculling.IntSliderControlAccessor accessor = (dev.isxander.xso.mixins.compat.moreculling.IntSliderControlAccessor) sliderControl;
-            yaclOption.controller(opt -> (dev.isxander.yacl3.api.controller.ControllerBuilder<T>) dev.isxander.yacl3.api.controller.FloatSliderControllerBuilder;.create((dev.isxander.yacl3.api.Option<Integer>) opt).range(accessor.getMin(), accessor.getMax()).step(accessor.getInterval()));
+            yaclOption.controller(opt -> (dev.isxander.yacl3.api.controller.ControllerBuilder<T>) dev.isxander.yacl3.api.controller.IntegerSliderControllerBuilder.create((dev.isxander.yacl3.api.Option<Integer>) opt).range(accessor.getMin(), accessor.getMax()).step(accessor.getInterval()));
             return true;
         }
 
         if (sodiumOption.getControl() instanceof ca.fxco.moreculling.config.sodium.FloatSliderControl sliderControl) {
             dev.isxander.xso.mixins.compat.moreculling.FloatSliderControlAccessor accessor = (dev.isxander.xso.mixins.compat.moreculling.FloatSliderControlAccessor) sliderControl;
-            yaclOption.controller(opt -> (dev.isxander.yacl3.api.controller.ControllerBuilder<T>) dev.isxander.yacl3.api.controller.FloatSliderControllerBuilder;.create((dev.isxander.yacl3.api.Option<Float>) opt).range(accessor.getMin(), accessor.getMax()).step(accessor.getInterval()));
+            yaclOption.controller(opt -> (dev.isxander.yacl3.api.controller.ControllerBuilder<T>) dev.isxander.yacl3.api.controller.FloatSliderControllerBuilder.create((dev.isxander.yacl3.api.Option<Float>) opt).range(accessor.getMin(), accessor.getMax()).step(accessor.getInterval()));
             return true;
         }
         *///?}

@@ -35,12 +35,5 @@
   },
   "breaks": {
     "reeses-sodium-options": "*"
-  },
-  "custom": {
-    "modmenu": {
-      "parent": {
-        "id": "sodium"
-      }
-    }
   }
 }
