@@ -19,10 +19,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.TranslatableOption;
 
-//? if <1.21 {
-/*import me.jellysquid.mods.sodium.client.gui.SodiumOptionsGUI;import me.jellysquid.mods.sodium.client.gui.options.OptionPage;import me.jellysquid.mods.sodium.client.gui.options.TextProvider;import me.jellysquid.mods.sodium.client.gui.options.control.CyclingControl;import me.jellysquid.mods.sodium.client.gui.options.control.SliderControl;import me.jellysquid.mods.sodium.client.gui.options.control.TickBoxControl;import me.jellysquid.mods.sodium.client.gui.options.storage.OptionStorage;import me.jellysquid.mods.sodium.client.SodiumClientMod;
-import me.jellysquid.mods.sodium.client.data.fingerprint.HashedFingerprint;
-import me.jellysquid.mods.sodium.client.gui.SodiumGameOptions;*///?} else {
 import net.caffeinemc.mods.sodium.client.gui.SodiumOptionsGUI;
 import net.caffeinemc.mods.sodium.client.gui.options.OptionPage;
 import net.caffeinemc.mods.sodium.client.gui.options.TextProvider;
@@ -33,7 +29,6 @@ import net.caffeinemc.mods.sodium.client.gui.options.storage.OptionStorage;
 import net.caffeinemc.mods.sodium.client.SodiumClientMod;
 import net.caffeinemc.mods.sodium.client.data.fingerprint.HashedFingerprint;
 import net.caffeinemc.mods.sodium.client.gui.SodiumGameOptions;
-//?}
 
 import java.io.IOException;
 import java.time.Instant;
@@ -136,22 +131,12 @@ public class XandersSodiumOptions {
         }
     }
 
-    //? if <1.21 {
-    /*private static <T> Option<?> convertOption(me.jellysquid.mods.sodium.client.gui.options.Option<T> sodiumOption) {    *///?} else {
     private static <T> Option<?> convertOption(net.caffeinemc.mods.sodium.client.gui.options.Option<T> sodiumOption) {
-    //?}
         try {
             if (sodiumOption.getName().contains(Text.of("Fullscreen Resolution"))) {
                 // Halt debugger so i can step by step
                 System.out.println("debug");
             }
-
-            //? if <1.21 {
-            /*if (Compat.ENTITY_VIEW_DIST) {
-                Optional<Option<?>> fakeOption = EntityViewDistanceCompat.convertFakeOption(sodiumOption);
-                if (fakeOption.isPresent()) return fakeOption.get();
-            }
-            *///?}
 
             if (!(sodiumOption instanceof ClassCapture<?>)) {
                 throw new IllegalStateException("Failed to capture class of sodium option! Likely due to custom Option implementation.");
@@ -195,10 +180,7 @@ public class XandersSodiumOptions {
 
     // nasty, nasty raw types to make the compiler not commit die
     @SuppressWarnings({"rawtypes", "unchecked"})
-    //? if <1.21 {
-    /*private static <T> void addController(Option.Builder yaclOption, me.jellysquid.mods.sodium.client.gui.options.Option<T> sodiumOption) {    *///?} else {
     private static <T> void addController(dev.isxander.yacl3.api.Option.Builder<T> yaclOption, net.caffeinemc.mods.sodium.client.gui.options.Option<T> sodiumOption) {
-    //?}
         if (sodiumOption.getControl() instanceof TickBoxControl) {
             yaclOption.controller(opt -> (dev.isxander.yacl3.api.controller.ControllerBuilder<T>) TickBoxControllerBuilder.create((Option<Boolean>) opt));
             return;
@@ -236,26 +218,9 @@ public class XandersSodiumOptions {
         throw new IllegalStateException("Unsupported Sodium Controller: " + sodiumOption.getControl().getClass().getName());
     }
 
-    //? if <1.21 {
-    /*private static List<OptionFlag> convertFlags(me.jellysquid.mods.sodium.client.gui.options.Option<?> sodiumOption) {    *///?} else {
     private static List<OptionFlag> convertFlags(net.caffeinemc.mods.sodium.client.gui.options.Option<?> sodiumOption) {
-    //?}
         List<OptionFlag> flags = new ArrayList<>();
-        //? if <1.21 {
-        /*if (sodiumOption.getFlags().contains(me.jellysquid.mods.sodium.client.gui.options.OptionFlag.REQUIRES_RENDERER_RELOAD)) {
-            flags.add(OptionFlag.RELOAD_CHUNKS);
-        } else if (sodiumOption.getFlags().contains(me.jellysquid.mods.sodium.client.gui.options.OptionFlag.REQUIRES_RENDERER_UPDATE)) {
-            flags.add(OptionFlag.WORLD_RENDER_UPDATE);
-        }
 
-        if (sodiumOption.getFlags().contains(me.jellysquid.mods.sodium.client.gui.options.OptionFlag.REQUIRES_ASSET_RELOAD)) {
-            flags.add(OptionFlag.ASSET_RELOAD);
-        }
-
-        if (sodiumOption.getFlags().contains(me.jellysquid.mods.sodium.client.gui.options.OptionFlag.REQUIRES_GAME_RESTART)) {
-            flags.add(OptionFlag.GAME_RESTART);
-        }
-        *///?} else {
         if (sodiumOption.getFlags().contains(net.caffeinemc.mods.sodium.client.gui.options.OptionFlag.REQUIRES_RENDERER_RELOAD)) {
             flags.add(OptionFlag.RELOAD_CHUNKS);
         } else if (sodiumOption.getFlags().contains(net.caffeinemc.mods.sodium.client.gui.options.OptionFlag.REQUIRES_RENDERER_UPDATE)) {
@@ -269,7 +234,6 @@ public class XandersSodiumOptions {
         if (sodiumOption.getFlags().contains(net.caffeinemc.mods.sodium.client.gui.options.OptionFlag.REQUIRES_GAME_RESTART)) {
             flags.add(OptionFlag.GAME_RESTART);
         }
-        //?}
 
         return flags;
     }

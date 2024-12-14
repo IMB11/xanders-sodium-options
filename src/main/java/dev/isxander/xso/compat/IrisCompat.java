@@ -9,11 +9,8 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
 
-//? if <1.21 {
-/*import me.jellysquid.mods.sodium.client.gui.SodiumOptionsGUI;import me.jellysquid.mods.sodium.client.gui.options.OptionPage;*///?} else {
 import net.caffeinemc.mods.sodium.client.gui.SodiumOptionsGUI;
 import net.caffeinemc.mods.sodium.client.gui.options.OptionPage;
-//?}
 
 import java.util.Optional;
 

@@ -6,10 +6,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 
-//? if <1.21 {
-/*import me.jellysquid.mods.sodium.client.gui.options.OptionImpl;*///?} else {
 import net.caffeinemc.mods.sodium.client.gui.options.OptionImpl;
-//?}
 
 @Mixin(value = OptionImpl.Builder.class, remap = false)
 public class OptionImplBuilderMixin<S, T> implements ClassCapture<T> {
