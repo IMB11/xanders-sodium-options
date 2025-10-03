@@ -9,6 +9,7 @@
     "OptionImplAccessor",
     "OptionImplBuilderMixin",
     "OptionImplMixin",
+    "DynamicMaxSliderControlAccessor",
     "SliderControlAccessor",
     "SodiumOptionsGUIAccessor",
     "compat.iris.SodiumOptionsGUIMixin",
