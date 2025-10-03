@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.10-SNAPSHOT'
+    id 'fabric-loom' version '1.11-SNAPSHOT'
 }
 
 version =  property("mod.version") + "+" + stonecutter.current.version
@@ -49,7 +49,7 @@ dependencies {
     modImplementation("maven.modrinth:sodium:${property('deps.sodium')}")
     modRuntimeOnly modCompileOnly("com.terraformersmc:modmenu:${property('deps.modmenu')}")
 
-    modImplementation "maven.modrinth:sodium-extra:${property('deps.sodium-extra')}"
+    modCompileOnly "maven.modrinth:sodium-extra:${property('deps.sodium-extra')}"
     modImplementation "maven.modrinth:moreculling:${property('deps.moreculling')}"
 
     modCompileOnly ("maven.modrinth:iris:${property('deps.iris')}")

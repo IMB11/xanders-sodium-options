@@ -3,6 +3,7 @@ package dev.isxander.xso;
 import dev.isxander.xso.compat.*;
 import dev.isxander.xso.config.XsoConfig;
 import dev.isxander.xso.mixins.CyclingControlAccessor;
+import dev.isxander.xso.mixins.DynamicMaxSliderControlAccessor;
 import dev.isxander.xso.mixins.SliderControlAccessor;
 import dev.isxander.xso.utils.ClassCapture;
 import dev.isxander.xso.utils.DonationPrompt;
@@ -10,6 +11,7 @@ import dev.isxander.yacl3.api.*;
 import dev.isxander.yacl3.api.controller.IntegerSliderControllerBuilder;
 import dev.isxander.yacl3.api.controller.TickBoxControllerBuilder;
 import dev.isxander.yacl3.impl.controller.EnumControllerBuilderImpl;
+import net.caffeinemc.mods.sodium.client.gui.options.control.DynamicMaxSliderControl;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.NoticeScreen;
 import net.minecraft.client.gui.screen.Screen;
@@ -224,6 +226,12 @@ public class XandersSodiumOptions {
         if (sodiumOption.getControl() instanceof SliderControl sliderControl) {
             SliderControlAccessor accessor = (SliderControlAccessor) sliderControl;
             yaclOption.controller(opt -> (dev.isxander.yacl3.api.controller.ControllerBuilder<T>) IntegerSliderControllerBuilder.create((Option<Integer>) opt).step(accessor.getInterval()).range(accessor.getMin(), accessor.getMax()).formatValue(value -> accessor.getMode().format(value)));
+            return;
+        }
+
+        if (sodiumOption.getControl() instanceof DynamicMaxSliderControl sliderControl) {
+            DynamicMaxSliderControlAccessor accessor = (DynamicMaxSliderControlAccessor) sliderControl;
+            yaclOption.controller(opt -> (dev.isxander.yacl3.api.controller.ControllerBuilder<T>) IntegerSliderControllerBuilder.create((Option<Integer>) opt).step(accessor.getInterval()).range(accessor.getMin(), accessor.getMax().getAsInt()).formatValue(value -> accessor.getMode().format(value)));
             return;
         }
 
