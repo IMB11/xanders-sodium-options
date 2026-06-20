@@ -8,5 +8,15 @@
   "xso.cfg.hard_crash.tooltip": "Jika XSO tidak dapat menukarkan GUI Sodium atas apa jua sebab, mendayakan tetapan ini akan membuatkan Minecraft ranap sepenuhnya, dan bukannya memaparkan amaran dan memberi anda GUI Sodium yang asal. Ini boleh memberi manfaat kerana ia akan membuat Minecraft menjana laporan ranap manakala ia hanya mencetak ke latest.log dengan tetapan ini ditutup.",
 
   "xso.incompatible.button": "Tetapan Tidak Serasi",
-  "xso.incompatible.tooltip": "Tetapan ini pada masa ini tidak serasi dengan XSO. Sila buat laporan isu untuk mendapatkan sokongan!"
+  "xso.incompatible.tooltip": "Tetapan ini pada masa ini tidak serasi dengan XSO. Sila buat laporan isu untuk mendapatkan sokongan!",
+  "options.iris.openShaderPackScreen": "Buka Skrin Asal",
+  "options.iris.openShaderPackScreen.description": "Jika anda menghadapi kesukaran menggunakan skrin ini untuk menukar pembayang, anda boleh mengklik butang ini untuk mengakses skrin pembayang Iris yang asal.",
+  "options.iris.downloadShaders": "Muat Turun Pembayang",
+  "options.iris.downloadShaders.description": "Klik butang ini untuk membuka laman carian \"Pek Pembayang\" di Modrinth.",
+  "options.iris.openShaderPacksFolder.description": "Klik butang ini untuk membuka folder \"shaderpacks\" yang merupakan tempat Iris memuatkan pembayang.",
+  "options.iris.selectedShaderPack": "Pembayang yang Dipilih",
+  "options.iris.selectedShaderPack.description": "Pembayang yang dipilih untuk dimuatkan oleh Iris.",
+  "options.iris.enableShaders": "Dayakan Pembayang",
+  "options.iris.enableShaders.description": "Patutkah Iris mendayakan pemaparan pembayang?",
+  "options.iris.shaderPackOptions": "Jika anda ingin menyunting konfigurasi pek pembayang semasa, anda perlu melakukannya sama ada melalui fail konfigurasi atau skrin konfigurasi Pek Pembayang Iris yang asal."
 }

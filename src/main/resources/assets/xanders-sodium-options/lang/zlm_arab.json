@@ -8,5 +8,15 @@
   "xso.cfg.hard_crash.tooltip": "جک XSO تيدق داڤت منوکرکن GUI Sodium اتس اڤ جوا سبب⹁ منداياکن تتڤن اين اکن ممبواتکن ماٴينکرف‌ت رانڤ سڤنوهڽ⹁ دان بوکنڽ مماڤرکن امرن دان ممبري اندا GUI Sodium يڠ اصل. اين بوليه ممبري منفعت کران اي اکن ممبوات ماٴينکرف‌ت منجان لاڤورن رانڤ ماناکالا اي هاڽ منچيتق کlatest.log دڠن تتڤن اين دتوتوڤ.",
 
   "xso.incompatible.button": "تتڤن تيدق سراسي",
-  "xso.incompatible.tooltip": "تتڤن اين ڤد ماس اين تيدق سراسي دڠن XSO. سيلا بوات لاڤورن ايسو اونتوق منداڤتکن سوکوڠن!"
+  "xso.incompatible.tooltip": "تتڤن اين ڤد ماس اين تيدق سراسي دڠن XSO. سيلا بوات لاڤورن ايسو اونتوق منداڤتکن سوکوڠن!",
+  "options.iris.openShaderPackScreen": "بوک سکرين اصل",
+  "options.iris.openShaderPackScreen.description": "جک اندا مڠهادڤي کسوکرن مڠݢوناکن سکرين اين اونتوق منوکر ڤمبايڠ⹁ اندا بوليه مڠکليک بوتڠ اين اونتوق مڠأکسيس سکرين ڤمبايڠ Iris يڠ اصل.",
+  "options.iris.downloadShaders": "موات تورون ڤمبايڠ",
+  "options.iris.downloadShaders.description": "کليک بوتڠ اين اونتوق ممبوک لامن چارين \"ڤيک ڤمبايڠ\" دModrinth.",
+  "options.iris.openShaderPacksFolder.description": "کليک بوتڠ اين اونتوق ممبوک فولدر \"shaderpacks\" يڠ مروڤاکن تمڤت Iris ممواتکن ڤمبايڠ.",
+  "options.iris.selectedShaderPack": "ڤمبايڠ يڠ دڤيليه",
+  "options.iris.selectedShaderPack.description": "ڤمبايڠ يڠ دڤيليه اونتوق دمواتکن اوليه Iris.",
+  "options.iris.enableShaders": "داياکن ڤمبايڠ",
+  "options.iris.enableShaders.description": "ڤاتوتکه Iris منداياکن ڤماڤرن ڤمبايڠ؟",
+  "options.iris.shaderPackOptions": "جک اندا ايڠين مڽونتيڠ کونفيݢوراسي ڤيک ڤمبايڠ سماس⹁ اندا ڤرلو ملاکوکنڽ سام اد ملالوٴي فاٴيل کونفيݢوراسي اتاو سکرين کونفيݢوراسي ڤيک ڤمبايڠ Iris يڠ اصل."
 }
